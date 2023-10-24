@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title>QDAIF</title>
+    <title>Quality-Diversity through AI Feedback</title>
 
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -152,7 +152,10 @@
         
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
-                <image style='border:1px solid #000000' src="/img/overview.png" class="img-responsive" alt="overview"><br>
+                <video width="100%" controls autoplay>
+                  <source src="video/qdaif.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>  
                 <h3>
                     Abstract
                 </h3>
@@ -179,6 +182,15 @@
 		<p>
 		  QDAIF outperforms baselines in creative writing domains such as opinion-writing (with diverse sentiment), stories (with diverse genres and endings), and poetry (with diverse genres and tones). Performance is measured by QD score, or how well the archive is filled with diverse high-quality solutions. Human evaluation verified that AI feedback is practically aligned with human feedback, and that humans also found sets of elite solutions from QDAIF to be more diverse and higher-quality than those from baselines.
 		</p>
+    <p>
+      <b>Animated:</b> QDAIF illuminates the archive quicker than the baseline, with baseline converging to miss certain parts of the search space. After displaying a snapshot of example stories, QDAIF continues to fill more bins with solutions.
+    </p>
+    <video width="100%" controls autoplay muted loop>
+      <source src="video/heatmap_animated.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <image style='border:1px solid #000000' src="/img/overview.png" class="img-responsive" alt="overview"><br>
 		<image style='border:1px solid #000000' src="/img/perf_opinion_stories.png" class="img-responsive" alt="overview"><br>
     <image style='border:1px solid #000000' src="/img/table_human_eval.png" class="img-responsive" alt="overview"><br>
     <image style='border:1px solid #000000' src="/img/poetry_heatmap_fig.png" class="img-responsive" alt="overview"><br>
