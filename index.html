@@ -34,7 +34,7 @@
             </h2>
         </div>
 
-        <style>
+        <style>      
             .author-info {
                 text-align: center;
                 margin-right: 40px; /* Adjust this to move the block to the right */
@@ -43,7 +43,7 @@
             .author {
                 display: flex;
                 justify-content: center;
-                gap: 45px; /* Change this value to adjust space between authors */
+                gap: 35px; /* Change this value to adjust space between authors */
             }
             
             .author li, .affiliation {
@@ -58,6 +58,73 @@
             .author-name {
                 font-size: 20px; /* Adjust this value to increase or decrease the author name size */
             }
+
+            .author-aff {
+                font-size: 10px; /* Adjust this value to increase or decrease the author name size */
+            }
+            /* Medium screens (Tablets) */
+            @media only screen and (max-width: 1024px) {
+                .author-name {
+                    font-size: 18px;
+                }
+                .affiliation {
+                    font-size: 13px;
+                }
+                .author {
+                    gap: 20px;
+                }
+                .author-aff {
+                    font-size: 9px;
+                }
+            }
+            
+            /* Medium screens (Tablets) */
+            @media only screen and (max-width: 768px) {
+                .author-name {
+                    font-size: 14px;
+                }
+                .affiliation {
+                    font-size: 11px;
+                }
+                .author {
+                    gap: 10px;
+                }
+                .author-aff {
+                    font-size: 7px;
+                }
+            }
+
+            /* Small screens (Large Phones) */
+            @media only screen and (max-width: 576px) {
+                .author-name {
+                    font-size: 11px;
+                }
+                .affiliation {
+                    font-size: 8px;
+                }
+                .author {
+                    gap: 8px;
+                }
+                .author-aff {
+                    font-size: 5.5px;
+                }
+            }
+
+            /* Extra small screens (Phones) */
+            @media only screen and (max-width: 480px) {
+                .author-name {
+                    font-size: 9px;
+                }
+                .affiliation {
+                    font-size: 6px;
+                }
+                .author {
+                    gap: 6px;
+                }
+                .author-aff {
+                    font-size: 4.5px;
+                }
+            }
             </style>
             
             <div class="row">
@@ -65,42 +132,42 @@
                     <ul class="author-info">
                         <div class="author">
                             <li>
-                                <a href="https://herbiebradley.com/" class="author-name">Herbie Bradley&ast;</a><sup>1,2,3</sup><br/>
+                                <a href="https://herbiebradley.com/" class="author-name">Herbie Bradley&ast;</a><sup class="author-aff">1,2,3</sup><br/>
                             </li>
                             <li>
-                                <a href="https://daia99.github.io/" class="author-name">Andrew Dai&ast;</a><sup>4</sup><br/>
+                                <a href="https://daia99.github.io/" class="author-name">Andrew Dai&ast;</a><sup class="author-aff">4</sup><br/>
                             </li>
                             <li>
-                                <a href="https://twitter.com/hannah_teufel/" class="author-name">Hannah Teufel</a><sup>4</sup><br/>
+                                <a href="https://twitter.com/hannah_teufel/" class="author-name">Hannah Teufel</a><sup class="author-aff">4</sup><br/>
                             </li>
                             <li>
-                                <a href="https://jennyzhangzt.com/" class="author-name">Jenny Zhang</a><sup>5,6</sup><br/>
+                                <a href="https://jennyzhangzt.com/" class="author-name">Jenny Zhang</a><sup class="author-aff">5,6</sup><br/>
                             </li>
                         </div>
                         <div class="author">
-                          <li>
-                            <a href="https://dblp.org/pid/278/2773.html/" class="author-name">Koen Oostermeijer</a><sup>4</sup><br/>
-                          </li>
-                          <li>
-                            <a href="https://www.linkedin.com/in/marco-bellagente-025884128/" class="author-name">Marco Bellagente</a><sup>7</sup><br/>
-                          </li>
-                          <li>
-                            <a href="http://jeffclune.com/" class="author-name">Jeff Clune</a><sup>5,6,8</sup><br/>
-                        </li>
-                        <li>
-                          <a href="https://scholar.google.se/citations?user=6Q6oO1MAAAAJ&hl=en" class="author-name">Kenneth Stanley</a><sup>9</sup><br/>
-                        </li>
-                      </div>
+                            <li>
+                                <a href="https://dblp.org/pid/278/2773.html/" class="author-name">Koen Oostermeijer</a><sup class="author-aff">4</sup><br/>
+                            </li>
+                            <li>
+                                <a href="https://github.com/marcobellagente93" class="author-name">Marco Bellagente</a><sup class="author-aff">7</sup><br/>
+                            </li>
+                            <li>
+                                <a href="http://jeffclune.com/" class="author-name">Jeff Clune</a><sup class="author-aff">5,6,8</sup><br/>
+                            </li>
+                            <li>
+                                <a href="https://scholar.google.se/citations?user=6Q6oO1MAAAAJ&hl=en" class="author-name">Kenneth Stanley</a><sup class="author-aff">9</sup><br/>
+                            </li>
+                        </div>
                         <div class="author">
-                          <li>
-                            <a href="https://inspirehep.net/authors/1028346/" class="author-name">Grégory Schott</a><sup>4</sup><br/>
-                          </li>
-                          <li>
-                            <a href="http://joellehman.com/" class="author-name">Joel Lehman</a><sup>10</sup><br/>
-                          </li>
+                            <li>
+                                <a href="https://inspirehep.net/authors/1028346/" class="author-name">Grégory Schott</a><sup class="author-aff">4</sup><br/>
+                            </li>
+                            <li>
+                                <a href="http://joellehman.com/" class="author-name">Joel Lehman</a><sup class="author-aff">10</sup><br/>
+                            </li>
                         </div>
                         <li class="affiliation">
-                          <sup>1</sup>CarperAI &emsp; <sup>2</sup>CAML Lab, University of Cambridge &emsp; <sup>3</sup>EleutherAI &emsp; <sup>4</sup>Aleph Alpha
+                            <sup>1</sup>CarperAI &emsp; <sup>2</sup>CAML Lab, University of Cambridge &emsp; <sup>3</sup>EleutherAI &emsp; <sup>4</sup>Aleph Alpha
                         </li>
                         <li class="affiliation">
                             <sup>5</sup>Department of Computer Science, University of British Columbia  
@@ -109,8 +176,8 @@
                             <sup>6</sup>Vector Institute &emsp; <sup>7</sup>Stability AI &emsp; <sup>8</sup>Canada CIFAR AI Chair &emsp; <sup>9</sup>Maven &emsp; <sup>10</sup>Stochastic Labs
                         </li>
                         <li class="affiliation">
-                          Asterisk (&ast;) denotes equal contribution.
-                      </li>
+                            Asterisk (&ast;) denotes equal contribution.
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -191,7 +258,7 @@
     </video>
 
     <image style='border:1px solid #000000' src="/img/overview.png" class="img-responsive" alt="overview"><br>
-		<image style='border:1px solid #000000' src="/img/perf_opinion_stories.png" class="img-responsive" alt="overview"><br>
+	<image style='border:1px solid #000000' src="/img/perf_opinion_stories.png" class="img-responsive" alt="overview"><br>
     <image style='border:1px solid #000000' src="/img/table_human_eval.png" class="img-responsive" alt="overview"><br>
     <image style='border:1px solid #000000' src="/img/poetry_line_plots.png" class="img-responsive" alt="overview"><br>
     <image style='border:1px solid #000000' src="/img/poetry_heatmap_fig.png" class="img-responsive" alt="overview"><br>
